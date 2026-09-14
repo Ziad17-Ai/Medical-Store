@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center - MediCare Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-hospital-alt"></i>
+                    <span>MediCare Store</span>
+                </a>
+                
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="products.html"><i class="fas fa-box"></i> Products</a></li>
+                        <li><a href="help.html" class="active"><i class="fas fa-question-circle"></i> Help</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">3</span>
+                    </a>
+                    <div class="user-dropdown">
+                        <button class="user-btn">
+                            <i class="fas fa-user"></i> Mohamed
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="profile.html"><i class="fas fa-user-circle"></i> My Profile</a>
+                            <a href="#"><i class="fas fa-shopping-bag"></i> Orders</a>
+                            <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+                            <a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </div>
+                    </div>
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Help Center Hero -->
+    <section class="help-hero">
+        <div class="container">
+            <div class="help-hero-content">
+                <h1><i class="fas fa-headset"></i> How can we help you today?</h1>
+                <div class="search-box help-search">
+                    <input type="text" placeholder="Search for answers...">
+                    <button><i class="fas fa-search"></i> Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Categories -->
+    <section class="help-categories">
+        <div class="container">
+            <div class="categories-grid">
+                <a href="#ordering" class="category-card">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>Ordering & Payment</h3>
+                    <p>Placing orders, payment methods, and billing</p>
+                </a>
+                
+                <a href="#shipping" class="category-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Shipping & Delivery</h3>
+                    <p>Delivery times, tracking, and shipping costs</p>
+                </a>
+                
+                <a href="#returns" class="category-card">
+                    <i class="fas fa-undo"></i>
+                    <h3>Returns & Refunds</h3>
+                    <p>Return policy, refund process, and exchanges</p>
+                </a>
+                
+                <a href="#prescription" class="category-card">
+                    <i class="fas fa-file-medical"></i>
+                    <h3>Prescription Products</h3>
+                    <p>Prescription requirements and verification</p>
+                </a>
+                
+                <a href="#products" class="category-card">
+                    <i class="fas fa-box"></i>
+                    <h3>Products & Equipment</h3>
+                    <p>Product information and usage guides</p>
+                </a>
+                
+                <a href="#account" class="category-card">
+                    <i class="fas fa-user-circle"></i>
+                    <h3>Account & Security</h3>
+                    <p>Account management and security</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Sections -->
+    <section class="faq-sections">
+        <div class="container">
+            <!-- Ordering & Payment -->
+            <div class="faq-section" id="ordering">
+                <h2><i class="fas fa-shopping-cart"></i> Ordering & Payment</h2>
+                
+                <div class="faq-items">
+                    <div class="faq-item">
+                        <h4>How do I place an order?</h4>
+                        <p>Browse our medical equipment, add items to your cart, and proceed to checkout. You'll need to provide shipping information and choose a payment method.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>What payment methods do you accept?</h4>
+                        <p>We accept Visa, MasterCard, PayPal, and cash on delivery for orders within Egypt. For hospitals and clinics, we also offer invoice payment options.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>Is it safe to use my credit card on your website?</h4>
+                        <p>Yes, we use 256-bit SSL encryption to protect all payment information. We are PCI-DSS compliant and never store your complete credit card details.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>Do you offer discounts for healthcare professionals?</h4>
+                        <p>Yes, registered doctors, nurses, and healthcare facilities receive special pricing. Contact our medical sales team for verification and pricing details.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Shipping & Delivery -->
+            <div class="faq-section" id="shipping">
+                <h2><i class="fas fa-shipping-fast"></i> Shipping & Delivery</h2>
+                
+                <div class="faq-items">
+                    <div class="faq-item">
+                        <h4>How long does delivery take?</h4>
+                        <p>Cairo: 1-2 business days<br>
+                           Major cities: 2-3 business days<br>
+                           Other areas: 3-5 business days<br>
+                           Express delivery is available for urgent medical needs.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>Do you ship internationally?</h4>
+                        <p>Currently, we only ship within Egypt. For international orders, please contact our export department at export@medicalstore.com</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>How can I track my order?</h4>
+                        <p>Once your order ships, you'll receive a tracking number via email. You can also track your order from your account dashboard.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>What are the shipping costs?</h4>
+                        <p>Standard shipping: EGP 200<br>
+                           Free shipping for orders over EGP 5,000<br>
+                           Express delivery: Additional EGP 300<br>
+                           Same-day Cairo delivery: Additional EGP 600</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Prescription Products -->
+            <div class="faq-section" id="prescription">
+                <h2><i class="fas fa-file-medical"></i> Prescription Products</h2>
+                
+                <div class="faq-items">
+                    <div class="faq-item">
+                        <h4>Which products require a prescription?</h4>
+                        <p>Medical devices such as oxygen concentrators, CPAP machines, certain surgical instruments, and medications require a valid doctor's prescription.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>How do I upload a prescription?</h4>
+                        <p>During checkout for prescription-required items, you'll be prompted to upload a clear photo or scan of your prescription. You can also upload prescriptions from your account dashboard.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>How long does prescription verification take?</h4>
+                        <p>Prescriptions are typically verified within 2-4 business hours during working days. For urgent medical needs, contact our medical team at +20 123 456 7890.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>What makes a prescription valid?</h4>
+                        <p>A valid prescription must include:<br>
+                           - Patient name and age<br>
+                           - Doctor's name, signature, and stamp<br>
+                           - Date of issue (within last 6 months)<br>
+                           - Clear medication/device name and dosage</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Support -->
+            <div class="contact-support">
+                <h2>Still need help?</h2>
+                <p>Our medical equipment specialists are available 24/7 to assist you.</p>
+                
+                <div class="contact-options">
+                    <div class="contact-option">
+                        <i class="fas fa-phone"></i>
+                        <h4>Call Us</h4>
+                        <p>+20 123 456 7890</p>
+                        <span>24/7 Medical Support Line</span>
+                    </div>
+                    
+                    <div class="contact-option">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email Us</h4>
+                        <p>support@medicalstore.com</p>
+                        <span>Response within 2 hours</span>
+                    </div>
+                    
+                    <div class="contact-option">
+                        <i class="fas fa-comments"></i>
+                        <h4>Live Chat</h4>
+                        <p>Chat with our specialists</p>
+                        <span>Available 8 AM - 12 AM</span>
+                        <button class="btn btn-primary">Start Chat</button>
+                    </div>
+                    
+                    <div class="contact-option">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Visit Us</h4>
+                        <p>123 Medical Street</p>
+                        <span>Cairo, Egypt</span>
+                        <button class="btn btn-outline">Get Directions</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <i class="fas fa-hospital-alt"></i>
+                        <span>MediCare Store</span>
+                    </div>
+                    <p>Your trusted partner for quality medical equipment and supplies in Egypt since 2015.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Diagnostic Equipment</a></li>
+                        <li><a href="#">Surgical Instruments</a></li>
+                        <li><a href="#">Patient Monitoring</a></li>
+                        <li><a href="#">Personal Protection</a></li>
+                        <li><a href="#">Therapy Equipment</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Medical Street, Cairo, Egypt</li>
+                        <li><i class="fas fa-phone"></i> +20 123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> support@medicalstore.com</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Customer Support</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 MediCare Medical Equipment Store. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="help.js"></script>
+</body>
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - MediCare Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-hospital-alt"></i>
+                    <span>MediCare Store</span>
+                </a>
+                
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="products.html"><i class="fas fa-box"></i> Products</a></li>
+                        <li><a href="help.html"><i class="fas fa-question-circle"></i> Help</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">3</span>
+                    </a>
+                    <div class="user-dropdown">
+                        <button class="user-btn">
+                            <i class="fas fa-user"></i> Mohamed
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="profile.html"><i class="fas fa-user-circle"></i> My Profile</a>
+                            <a href="#"><i class="fas fa-shopping-bag"></i> Orders</a>
+                            <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+                            <a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </div>
+                    </div>
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+                <a href="products.html">Products</a> <i class="fas fa-chevron-right"></i>
+                <a href="#">Monitoring Devices</a> <i class="fas fa-chevron-right"></i>
+                <span>Digital Blood Pressure Monitor</span>
+            </div>
+            
+            <div class="product-detail-layout">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Digital Blood Pressure Monitor" id="mainImage">
+                    </div>
+                    <div class="image-thumbnails">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Thumbnail 1" class="thumbnail active">
+                        <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Thumbnail 2" class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1586773860418-dc22f8b874bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Thumbnail 3" class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Thumbnail 4" class="thumbnail">
+                    </div>
+                </div>
+                
+                <!-- Product Info -->
+                <div class="product-info">
+                    <div class="product-badge">Bestseller</div>
+                    <span class="product-category">Monitoring Devices</span>
+                    <h1 class="product-title">Digital Blood Pressure Monitor - Professional Edition</h1>
+                    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-value">4.5</span>
+                        <span class="rating-count">(124 reviews)</span>
+                        <a href="#reviews" class="review-link">View all reviews</a>
+                    </div>
+                    
+                    <div class="product-price">
+                        <span class="current-price">EGP 1,299</span>
+                        <span class="original-price">EGP 1,599</span>
+                        <span class="discount">Save 19%</span>
+                    </div>
+                    
+                    <div class="product-stock">
+                        <i class="fas fa-check-circle"></i>
+                        <span>In Stock: 25 units</span>
+                        <span class="stock-warning">(Only 5 left at this price)</span>
+                    </div>
+                    
+                    <div class="product-description">
+                        <p>Professional-grade digital blood pressure monitor with advanced accuracy for home and clinical use. Features irregular heartbeat detection, large memory storage, and WHO classification indicator.</p>
+                    </div>
+                    
+                    <!-- Specifications -->
+                    <div class="product-specs">
+                        <h3>Key Features:</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> FDA & CE Certified</li>
+                            <li><i class="fas fa-check"></i> Irregular Heartbeat Detection</li>
+                            <li><i class="fas fa-check"></i> 200 Memory Storage</li>
+                            <li><i class="fas fa-check"></i> WHO Classification Indicator</li>
+                            <li><i class="fas fa-check"></i> Automatic Inflation</li>
+                            <li><i class="fas fa-check"></i> Large LCD Display</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Add to Cart -->
+                    <div class="add-to-cart-section">
+                        <div class="quantity-selector">
+                            <label for="quantity">Quantity:</label>
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" id="quantity" value="1" min="1" max="10">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                        
+                        <div class="cart-actions">
+                            <button class="btn btn-primary add-to-cart-btn">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="btn btn-outline wishlist-btn">
+                                <i class="far fa-heart"></i> Add to Wishlist
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product Meta -->
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>2-Year Warranty</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Free Shipping over EGP 5,000</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-undo"></i>
+                            <span>30-Day Return Policy</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-headset"></i>
+                            <span>24/7 Medical Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tab-headers">
+                    <button class="tab-header active" data-tab="description">Description</button>
+                    <button class="tab-header" data-tab="specifications">Specifications</button>
+                    <button class="tab-header" data-tab="reviews">Reviews (124)</button>
+                    <button class="tab-header" data-tab="faq">FAQ</button>
+                </div>
+                
+                <div class="tab-contents">
+                    <!-- Description Tab -->
+                    <div class="tab-content active" id="description">
+                        <h3>Product Overview</h3>
+                        <p>This digital blood pressure monitor is designed for both professional healthcare settings and home use. It provides accurate, reliable measurements with advanced features for comprehensive health monitoring.</p>
+                        
+                        <h4>Clinical Accuracy</h4>
+                        <p>Validated according to international protocols including ESH (European Society of Hypertension) standards. Measurement range: 0-299 mmHg with ±3 mmHg accuracy.</p>
+                        
+                        <h4>Advanced Features</h4>
+                        <ul>
+                            <li>Automatic inflation and deflation</li>
+                            <li>Irregular heartbeat detection with visual indicator</li>
+                            <li>200 memory storage with date and time stamp</li>
+                            <li>WHO classification indicator</li>
+                            <li>Average of last 3 readings</li>
+                            <li>Automatic power off</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Specifications Tab -->
+                    <div class="tab-content" id="specifications">
+                        <div class="specs-table">
+                            <div class="spec-row">
+                                <span class="spec-name">Model</span>
+                                <span class="spec-value">BP-2023-Pro</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-name">Measurement Method</span>
+                                <span class="spec-value">Oscillometric</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-name">Measurement Range</span>
+                                <span class="spec-value">Pressure: 0-299 mmHg, Pulse: 40-180 beats/min</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-name">Accuracy</span>
+                                <span class="spec-value">Pressure: ±3 mmHg, Pulse: ±5%</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-name">Cuff Size</span>
+                                <span class="spec-value">22-32 cm (Standard Adult)</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-name">Memory</span>
+                                <span class="spec-value">200 sets with date/time</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-name">Power Source</span>
+                                <span class="spec-value">4 x AA Batteries or AC Adapter</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-name">Warranty</span>
+                                <span class="spec-value">2 Years</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-name">Certifications</span>
+                                <span class="spec-value">FDA, CE, ISO 13485</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Reviews Tab -->
+                    <div class="tab-content" id="reviews">
+                        <div class="reviews-summary">
+                            <div class="average-rating">
+                                <h3>4.5</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p>Based on 124 reviews</p>
+                            </div>
+                            <div class="rating-bars">
+                                <div class="rating-bar">
+                                    <span>5 Stars</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 70%"></div>
+                                    </div>
+                                    <span>70%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>4 Stars</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 20%"></div>
+                                    </div>
+                                    <span>20%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>3 Stars</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 7%"></div>
+                                    </div>
+                                    <span>7%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>2 Stars</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 2%"></div>
+                                    </div>
+                                    <span>2%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>1 Star</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 1%"></div>
+                                    </div>
+                                    <span>1%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="review-form">
+                            <h4>Write a Review</h4>
+                            <div class="rating-input">
+                                <span>Your Rating:</span>
+                                <div class="star-rating">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                            <textarea placeholder="Share your experience with this product..."></textarea>
+                            <button class="btn btn-primary">Submit Review</button>
+                        </div>
+                        
+                        <div class="review-list">
+                            <div class="review">
+                                <div class="review-header">
+                                    <div class="reviewer">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. Ahmed">
+                                        <div>
+                                            <h5>Dr. Ahmed Hassan</h5>
+                                            <span>Cardiologist</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-rating">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span>2 days ago</span>
+                                    </div>
+                                </div>
+                                <p>"Excellent accuracy compared to our hospital-grade monitors. The irregular heartbeat detection feature is particularly useful for patient monitoring at home."</p>
+                            </div>
+                            
+                            <div class="review">
+                                <div class="review-header">
+                                    <div class="reviewer">
+                                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Mona">
+                                        <div>
+                                            <h5>Mona Ali</h5>
+                                            <span>Home Caregiver</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-rating">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <span>1 week ago</span>
+                                    </div>
+                                </div>
+                                <p>"Easy to use for my elderly parents. Large display and voice guidance are very helpful. Battery life could be better though."</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Tab -->
+                    <div class="tab-content" id="faq">
+                        <div class="faq-item">
+                            <h4>How accurate is this blood pressure monitor?</h4>
+                            <p>This device is clinically validated with ±3 mmHg accuracy, meeting international standards for blood pressure measurement devices.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Is it suitable for clinical use?</h4>
+                            <p>Yes, this model is FDA and CE certified for both home and professional clinical use.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>What is the warranty period?</h4>
+                            <p>We provide a 2-year manufacturer warranty covering all manufacturing defects.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Can multiple users use the same device?</h4>
+                            <p>Yes, the device can store up to 200 readings with user identification for multiple users.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2>Related Medical Equipment</h2>
+                <div class="products-grid">
+                    <!-- Product cards will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with Medical Innovations</h2>
+                <p>Subscribe to get exclusive offers, new product alerts, and medical equipment guides</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <i class="fas fa-hospital-alt"></i>
+                        <span>MediCare Store</span>
+                    </div>
+                    <p>Your trusted partner for quality medical equipment and supplies in Egypt since 2015.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Diagnostic Equipment</a></li>
+                        <li><a href="#">Surgical Instruments</a></li>
+                        <li><a href="#">Patient Monitoring</a></li>
+                        <li><a href="#">Personal Protection</a></li>
+                        <li><a href="#">Therapy Equipment</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Medical Street, Cairo, Egypt</li>
+                        <li><i class="fas fa-phone"></i> +20 123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> support@medicalstore.com</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Customer Support</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 MediCare Medical Equipment Store. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Shopping Cart</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added here by JavaScript -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-price">EGP 0.00</span>
+            </div>
+            <div class="cart-actions">
+                <a href="cart.html" class="btn btn-outline">View Cart</a>
+                <a href="checkout.html" class="btn btn-primary">Checkout</a>
+            </div>
+        </div>
+    </div>
+    <div class="cart-overlay"></div>
+
+    <script src="app.js"></script>
+    <script src="product-details.js"></script>
+</body>
+</html>

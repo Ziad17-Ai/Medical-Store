@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - MediCare Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+    <!-- Admin Header -->
+    <header class="admin-header">
+        <div class="container">
+            <nav class="admin-navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-hospital-alt"></i>
+                    <span>MediCare Admin</span>
+                </a>
+                
+                <div class="admin-actions">
+                    <div class="admin-search">
+                        <input type="text" placeholder="Search medical products, orders...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <div class="admin-notifications">
+                        <button class="notification-btn">
+                            <i class="fas fa-bell"></i>
+                            <span class="notification-count">3</span>
+                        </button>
+                        <div class="notification-dropdown">
+                            <div class="notification-item">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <div>
+                                    <p>New prescription requires approval</p>
+                                    <span>5 minutes ago</span>
+                                </div>
+                            </div>
+                            <div class="notification-item">
+                                <i class="fas fa-shopping-cart"></i>
+                                <div>
+                                    <p>New order #MED20250015</p>
+                                    <span>1 hour ago</span>
+                                </div>
+                            </div>
+                            <div class="notification-item">
+                                <i class="fas fa-box"></i>
+                                <div>
+                                    <p>Low stock alert: Thermometers</p>
+                                    <span>2 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-user">
+                        <div class="user-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Admin">
+                        </div>
+                        <div class="user-info">
+                            <span class="user-name">Admin User</span>
+                            <span class="user-role">System Administrator</span>
+                        </div>
+                        <a href="index.html" class="logout-btn" title="Back to Store">
+                            <i class="fas fa-store"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Admin Layout -->
+    <div class="admin-layout">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <nav class="admin-menu">
+                <a href="#dashboard" class="menu-item active">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+                
+                <div class="menu-section">
+                    <h4>Products</h4>
+                    <a href="#products" class="menu-item">
+                        <i class="fas fa-box"></i>
+                        <span>All Products</span>
+                    </a>
+                    <a href="#categories" class="menu-item">
+                        <i class="fas fa-tags"></i>
+                        <span>Categories</span>
+                    </a>
+                    <a href="#inventory" class="menu-item">
+                        <i class="fas fa-warehouse"></i>
+                        <span>Inventory</span>
+                    </a>
+                    <a href="#suppliers" class="menu-item">
+                        <i class="fas fa-truck-loading"></i>
+                        <span>Suppliers</span>
+                    </a>
+                </div>
+                
+                <div class="menu-section">
+                    <h4>Sales</h4>
+                    <a href="#orders" class="menu-item">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>Orders</span>
+                        <span class="menu-badge">15</span>
+                    </a>
+                    <a href="#transactions" class="menu-item">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Transactions</span>
+                    </a>
+                    <a href="#returns" class="menu-item">
+                        <i class="fas fa-undo"></i>
+                        <span>Returns</span>
+                        <span class="menu-badge">2</span>
+                    </a>
+                </div>
+                
+                <div class="menu-section">
+                    <h4>Users</h4>
+                    <a href="#customers" class="menu-item">
+                        <i class="fas fa-users"></i>
+                        <span>Customers</span>
+                    </a>
+                    <a href="#prescriptions" class="menu-item">
+                        <i class="fas fa-file-medical"></i>
+                        <span>Prescriptions</span>
+                        <span class="menu-badge">3</span>
+                    </a>
+                    <a href="#staff" class="menu-item">
+                        <i class="fas fa-user-md"></i>
+                        <span>Staff</span>
+                    </a>
+                </div>
+                
+                <div class="menu-section">
+                    <h4>Analytics</h4>
+                    <a href="#reports" class="menu-item">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Reports</span>
+                    </a>
+                    <a href="#analytics" class="menu-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Analytics</span>
+                    </a>
+                </div>
+                
+                <div class="menu-section">
+                    <h4>Settings</h4>
+                    <a href="#settings" class="menu-item">
+                        <i class="fas fa-cog"></i>
+                        <span>System Settings</span>
+                    </a>
+                    <a href="#shipping" class="menu-item">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Shipping</span>
+                    </a>
+                    <a href="#tax" class="menu-item">
+                        <i class="fas fa-percentage"></i>
+                        <span>Tax Settings</span>
+                    </a>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-content">
+            <!-- Dashboard -->
+            <div class="admin-section active" id="dashboard">
+                <div class="section-header">
+                    <h1>Admin Dashboard</h1>
+                    <div class="header-actions">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Add Product
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-file-export"></i> Export Report
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Total Orders</h3>
+                            <p class="stat-number">1,245</p>
+                            <span class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i> 12.5% this month
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Total Revenue</h3>
+                            <p class="stat-number">EGP 2.5M</p>
+                            <span class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i> 8.3% this month
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Total Customers</h3>
+                            <p class="stat-number">856</p>
+                            <span class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i> 5.2% this month
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Products</h3>
+                            <p class="stat-number">324</p>
+                            <span class="stat-change negative">
+                                <i class="fas fa-arrow-down"></i> 2 Low stock
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Charts and Recent Activity -->
+                <div class="charts-grid">
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>Revenue Overview</h3>
+                            <select class="chart-period">
+                                <option>Last 7 days</option>
+                                <option selected>Last 30 days</option>
+                                <option>Last 90 days</option>
+                            </select>
+                        </div>
+                        <div class="chart-placeholder">
+                            <!-- In real app, this would be a chart -->
+                            <div class="chart-visual">
+                                <div class="chart-bar" style="height: 60%;" title="Mon: EGP 45,000"></div>
+                                <div class="chart-bar" style="height: 80%;" title="Tue: EGP 60,000"></div>
+                                <div class="chart-bar" style="height: 45%;" title="Wed: EGP 33,000"></div>
+                                <div class="chart-bar" style="height: 90%;" title="Thu: EGP 67,000"></div>
+                                <div class="chart-bar" style="height: 70%;" title="Fri: EGP 52,000"></div>
+                                <div class="chart-bar" style="height: 85%;" title="Sat: EGP 63,000"></div>
+                                <div class="chart-bar" style="height: 95%;" title="Sun: EGP 71,000"></div>
+                            </div>
+                            <div class="chart-labels">
+                                <span>Mon</span>
+                                <span>Tue</span>
+                                <span>Wed</span>
+                                <span>Thu</span>
+                                <span>Fri</span>
+                                <span>Sat</span>
+                                <span>Sun</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>Top Categories</h3>
+                        </div>
+                        <div class="chart-placeholder">
+                            <div class="category-stats">
+                                <div class="category-item">
+                                    <span class="category-name">Diagnostic Equipment</span>
+                                    <div class="category-bar">
+                                        <div class="category-fill" style="width: 45%;"></div>
+                                    </div>
+                                    <span class="category-value">45%</span>
+                                </div>
+                                <div class="category-item">
+                                    <span class="category-name">Personal Protection</span>
+                                    <div class="category-bar">
+                                        <div class="category-fill" style="width: 30%;"></div>
+                                    </div>
+                                    <span class="category-value">30%</span>
+                                </div>
+                                <div class="category-item">
+                                    <span class="category-name">Surgical Instruments</span>
+                                    <div class="category-bar">
+                                        <div class="category-fill" style="width: 15%;"></div>
+                                    </div>
+                                    <span class="category-value">15%</span>
+                                </div>
+                                <div class="category-item">
+                                    <span class="category-name">Therapy Equipment</span>
+                                    <div class="category-bar">
+                                        <div class="category-fill" style="width: 10%;"></div>
+                                    </div>
+                                    <span class="category-value">10%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recent Orders -->
+                <div class="recent-table">
+                    <div class="table-header">
+                        <h3>Recent Orders</h3>
+                        <a href="#orders" class="btn btn-outline">View All Orders</a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Date</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#MED20250015</td>
+                                    <td>Dr. Ahmed Hassan</td>
+                                    <td>Dec 20, 2025</td>
+                                    <td>EGP 18,500</td>
+                                    <td><span class="status processing">Processing</span></td>
+                                    <td>
+                                        <button class="btn-icon" title="View"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-icon" title="Edit"><i class="fas fa-edit"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#MED20250014</td>
+                                    <td>Cairo Hospital</td>
+                                    <td>Dec 19, 2025</td>
+                                    <td>EGP 125,000</td>
+                                    <td><span class="status shipped">Shipped</span></td>
+                                    <td>
+                                        <button class="btn-icon" title="View"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-icon" title="Track"><i class="fas fa-truck"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#MED20250013</td>
+                                    <td>Mona Ali Pharmacy</td>
+                                    <td>Dec 18, 2025</td>
+                                    <td>EGP 45,000</td>
+                                    <td><span class="status delivered">Delivered</span></td>
+                                    <td>
+                                        <button class="btn-icon" title="View"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-icon" title="Invoice"><i class="fas fa-file-invoice"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#MED20250012</td>
+                                    <td>Dr. Sara Mohamed</td>
+                                    <td>Dec 17, 2025</td>
+                                    <td>EGP 8,500</td>
+                                    <td><span class="status pending">Pending</span></td>
+                                    <td>
+                                        <button class="btn-icon" title="View"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-icon" title="Approve"><i class="fas fa-check"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Products Management -->
+            <div class="admin-section" id="products">
+                <div class="section-header">
+                    <h1>Products Management</h1>
+                    <div class="header-actions">
+                        <button class="btn btn-primary" id="addProductBtn">
+                            <i class="fas fa-plus"></i> Add New Product
+                        </button>
+                    </div>
+                </div>
+                <!-- Products content will be loaded here -->
+            </div>
+            
+            <!-- Other sections would be here -->
+        </main>
+    </div>
+
+    <!-- Add Product Modal -->
+    <div class="modal" id="addProductModal">
+        <div class="modal-content wide">
+            <div class="modal-header">
+                <h3><i class="fas fa-plus-circle"></i> Add New Medical Product</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form class="product-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="productName">Product Name *</label>
+                            <input type="text" id="productName" placeholder="Enter product name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="productCategory">Category *</label>
+                            <select id="productCategory" required>
+                                <option value="">Select Category</option>
+                                <option value="diagnostic">Diagnostic Equipment</option>
+                                <option value="surgical">Surgical Instruments</option>
+                                <option value="monitoring">Patient Monitoring</option>
+                                <option value="protection">Personal Protection</option>
+                                <option value="therapy">Therapy Equipment</option>
+                                <option value="disposable">Disposable Products</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="productPrice">Price (EGP) *</label>
+                            <input type="number" id="productPrice" placeholder="0.00" step="0.01" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="productStock">Stock Quantity *</label>
+                            <input type="number" id="productStock" placeholder="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="productSKU">SKU *</label>
+                            <input type="text" id="productSKU" placeholder="Product SKU" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="productBrand">Brand</label>
+                            <input type="text" id="productBrand" placeholder="Brand name">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="productDescription">Description *</label>
+                        <textarea id="productDescription" rows="4" placeholder="Product description" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="productSpecs">Specifications (JSON)</label>
+                        <textarea id="productSpecs" rows="3" placeholder='{"color": "white", "weight": "2.5kg"}'></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Product Images</label>
+                        <div class="image-upload">
+                            <div class="upload-area">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Drop product images here or click to browse</p>
+                                <input type="file" multiple accept="image/*">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input type="checkbox" id="requiresPrescription">
+                        <label for="requiresPrescription">Requires Prescription</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input type="checkbox" id="isFeatured">
+                        <label for="isFeatured">Featured Product</label>
+                    </div>
+                    
+                    <div class="modal-actions">
+                        <button type="button" class="btn btn-outline cancel-btn">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Add Product</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay"></div>
+
+    <script src="app.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

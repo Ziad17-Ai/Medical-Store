@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare - Medical Equipment Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-hospital-alt"></i>
+                    <span>MediCare Store</span>
+                </div>
+                
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="products.html"><i class="fas fa-box"></i> Products</a></li>
+                        <li><a href="help.html"><i class="fas fa-question-circle"></i> Help</a></li>
+                        <li class="dropdown">
+                            <a href="#"><i class="fas fa-user-md"></i> Categories <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="#"><i class="fas fa-heartbeat"></i> Diagnostic Equipment</a>
+                                <a href="#"><i class="fas fa-cut"></i> Surgical Instruments</a>
+                                <a href="#"><i class="fas fa-procedures"></i> Patient Monitoring</a>
+                                <a href="#"><i class="fas fa-shield-alt"></i> Personal Protection</a>
+                                <a href="#"><i class="fas fa-syringe"></i> Disposable Products</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">3</span>
+                    </a>
+                    <div class="user-dropdown">
+                        <button class="user-btn">
+                            <i class="fas fa-user"></i> Mohamed
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="profile.html"><i class="fas fa-user-circle"></i> My Profile</a>
+                            <a href="#"><i class="fas fa-shopping-bag"></i> Orders</a>
+                            <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+                            <a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </div>
+                    </div>
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Full Width Hero Banner -->
+    <section class="hero-banner">
+        <div class="banner-overlay">
+            <div class="container">
+                <div class="banner-content">
+                    <h1>Quality Medical Equipment for Healthcare Professionals</h1>
+                    <p>Supplying hospitals, clinics, and individuals with reliable medical devices and supplies across Egypt</p>
+                    <div class="banner-buttons">
+                        <a href="products.html" class="btn btn-primary">Shop Now</a>
+                        <a href="#categories" class="btn btn-outline">Browse Categories</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>24-48 hour delivery across major cities in Egypt</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Certified Products</h3>
+                    <p>All products are FDA/CE certified and verified</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Medical professionals available for consultation</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-undo"></i>
+                    <h3>Easy Returns</h3>
+                    <p>30-day return policy for all products</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories-grid">
+                <a href="products.html?category=diagnostic" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Diagnostic Equipment</h3>
+                    <p>Thermometers, BP Monitors, ECG Machines</p>
+                    <span class="product-count">45 Products</span>
+                </a>
+                
+                <a href="products.html?category=surgical" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Surgical Instruments</h3>
+                    <p>Forceps, Scalpels, Retractors</p>
+                    <span class="product-count">28 Products</span>
+                </a>
+                
+                <a href="products.html?category=monitoring" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Patient Monitoring</h3>
+                    <p>Ventilators, Monitors, Pulse Oximeters</p>
+                    <span class="product-count">32 Products</span>
+                </a>
+                
+                <a href="products.html?category=protection" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Personal Protection</h3>
+                    <p>Masks, Gloves, Gowns, Face Shields</p>
+                    <span class="product-count">67 Products</span>
+                </a>
+                
+                <a href="products.html?category=therapy" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Therapy Equipment</h3>
+                    <p>Nebulizers, Infusion Pumps, Wheelchairs</p>
+                    <span class="product-count">23 Products</span>
+                </a>
+                
+                <a href="products.html?category=disposable" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <h3>Disposable Products</h3>
+                    <p>Syringes, Catheters, Bandages</p>
+                    <span class="product-count">89 Products</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Medical Equipment</h2>
+                <a href="products.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-badge">Bestseller</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Digital Blood Pressure Monitor">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Monitoring Devices</span>
+                        <h3 class="product-title">Digital Blood Pressure Monitor</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(124)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">EGP 1,299</span>
+                            <span class="original-price">EGP 1,599</span>
+                        </div>
+                        <div class="product-stock">
+                            <i class="fas fa-check-circle"></i> In Stock: 25 units
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-outline add-to-cart" data-id="1">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <a href="product-details.html" class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-badge prescription">Requires Prescription</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Portable Oxygen Concentrator">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Respiratory Care</span>
+                        <h3 class="product-title">Portable Oxygen Concentrator</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="rating-count">(89)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">EGP 18,500</span>
+                        </div>
+                        <div class="product-stock">
+                            <i class="fas fa-clock"></i> Limited Stock: 3 units
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-outline add-to-cart" data-id="2">
+                                <i class="fas fa-cart-plus"></i> Add Prescription
+                            </button>
+                            <a href="product-details.html" class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-badge">New Arrival</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Digital Thermometer">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Diagnostic Tools</span>
+                        <h3 class="product-title">Infrared Digital Thermometer</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(256)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">EGP 450</span>
+                        </div>
+                        <div class="product-stock">
+                            <i class="fas fa-check-circle"></i> In Stock: 150 units
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart" data-id="3">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <a href="product-details.html" class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Hospital Bed">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Hospital Furniture</span>
+                        <h3 class="product-title">Electric Adjustable Hospital Bed</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(67)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">EGP 32,000</span>
+                            <span class="original-price">EGP 35,000</span>
+                        </div>
+                        <div class="product-stock">
+                            <i class="fas fa-check-circle"></i> In Stock: 8 units
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-outline add-to-cart" data-id="4">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <a href="product-details.html" class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Trusted by Medical Professionals</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The equipment we purchased from MediCare has been reliable and the delivery was prompt. Excellent service for our clinic."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. Ahmed">
+                        <div>
+                            <h4>Dr. Ahmed Hassan</h4>
+                            <span>Cardiologist, Cairo Hospital</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a pharmacy owner, I appreciate the variety and quality of disposable products. Customer support is always helpful."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr. Mona">
+                        <div>
+                            <h4>Dr. Mona Alaa</h4>
+                            <span>Pharmacy Owner, Alexandria</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The portable oxygen concentrator has been life-changing for my father. Thank you for the professional guidance."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Mohamed">
+                        <div>
+                            <h4>Mohamed Ibrahim</h4>
+                            <span>Customer, Giza</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with Medical Innovations</h2>
+                <p>Subscribe to get exclusive offers, new product alerts, and medical equipment guides</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <i class="fas fa-hospital-alt"></i>
+                        <span>MediCare Store</span>
+                    </div>
+                    <p>Your trusted partner for quality medical equipment and supplies in Egypt since 2015.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Diagnostic Equipment</a></li>
+                        <li><a href="#">Surgical Instruments</a></li>
+                        <li><a href="#">Patient Monitoring</a></li>
+                        <li><a href="#">Personal Protection</a></li>
+                        <li><a href="#">Therapy Equipment</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Medical Street, Cairo, Egypt</li>
+                        <li><i class="fas fa-phone"></i> +20 123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> support@medicalstore.com</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Customer Support</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 MediCare Medical Equipment Store. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Shopping Cart</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added here by JavaScript -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-price">EGP 0.00</span>
+            </div>
+            <div class="cart-actions">
+                <a href="cart.html" class="btn btn-outline">View Cart</a>
+                <a href="checkout.html" class="btn btn-primary">Checkout</a>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Banner Section -->
+    <section class="hero-banner">
+        <div class="banner-content">
+            <h1>Quality Medical Equipment for Healthcare Professionals</h1>
+            <p>Supplying hospitals, clinics, and individuals with reliable medical devices and supplies across Egypt</p>
+            <div class="banner-buttons">
+                <a href="products.html" class="btn btn-primary">Shop Now</a>
+                <a href="#categories" class="btn btn-outline">Browse Categories</a>
+            </div>
+        </div>
+    </section>
+    <div class="cart-overlay"></div>
+    <script src="app.js"></script>
+</body>
+</html>

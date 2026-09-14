@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - MediCare Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-hospital-alt"></i>
+                    <span>MediCare Store</span>
+                </a>
+                
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="products.html"><i class="fas fa-box"></i> Products</a></li>
+                        <li><a href="help.html"><i class="fas fa-question-circle"></i> Help</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">3</span>
+                    </a>
+                    <div class="user-dropdown">
+                        <button class="user-btn active">
+                            <i class="fas fa-user"></i> Mohamed
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="profile.html" class="active"><i class="fas fa-user-circle"></i> My Profile</a>
+                            <a href="#orders"><i class="fas fa-shopping-bag"></i> Orders</a>
+                            <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+                            <a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </div>
+                    </div>
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-layout">
+                <!-- Sidebar -->
+                <aside class="profile-sidebar">
+                    <div class="profile-info-card">
+                        <div class="profile-header">
+                            <div class="avatar">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mohamed Ahmed">
+                                <button class="edit-avatar"><i class="fas fa-camera"></i></button>
+                            </div>
+                            <h3>Dr. Mohamed Ahmed</h3>
+                            <span class="user-role">
+                                <i class="fas fa-user-md"></i> Healthcare Professional
+                            </span>
+                            <div class="verification-badge">
+                                <i class="fas fa-check-circle"></i> Verified Account
+                            </div>
+                        </div>
+                        
+                        <div class="profile-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">Orders</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">Wishlist</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Prescriptions</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <nav class="profile-menu">
+                        <a href="#dashboard" class="menu-item active">
+                            <i class="fas fa-tachometer-alt"></i> Dashboard
+                        </a>
+                        <a href="#orders" class="menu-item">
+                            <i class="fas fa-shopping-bag"></i> My Orders
+                        </a>
+                        <a href="#prescriptions" class="menu-item">
+                            <i class="fas fa-file-medical"></i> Prescriptions
+                        </a>
+                        <a href="#wishlist" class="menu-item">
+                            <i class="fas fa-heart"></i> Wishlist
+                        </a>
+                        <a href="#settings" class="menu-item">
+                            <i class="fas fa-cog"></i> Account Settings
+                        </a>
+                        <a href="#security" class="menu-item">
+                            <i class="fas fa-shield-alt"></i> Security
+                        </a>
+                        <a href="login.html" class="menu-item logout">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
+                    </nav>
+                </aside>
+                
+                <!-- Main Content -->
+                <main class="profile-content">
+                    <!-- Dashboard -->
+                    <div class="profile-section-content active" id="dashboard">
+                        <div class="section-header">
+                            <h2>Dashboard</h2>
+                            <p>Welcome back, Dr. Mohamed! Here's your medical equipment overview.</p>
+                        </div>
+                        
+                        <div class="dashboard-cards">
+                            <div class="dashboard-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-shopping-bag"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h4>Recent Orders</h4>
+                                    <p class="card-value">3 Active Orders</p>
+                                    <a href="#orders" class="card-link">View All <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            
+                            <div class="dashboard-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h4>Shipping Status</h4>
+                                    <p class="card-value">2 In Transit</p>
+                                    <a href="#orders" class="card-link">Track Orders <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            
+                            <div class="dashboard-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-file-medical"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h4>Prescriptions</h4>
+                                    <p class="card-value">2 Active</p>
+                                    <a href="#prescriptions" class="card-link">Manage <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            
+                            <div class="dashboard-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-percentage"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h4>Special Offers</h4>
+                                    <p class="card-value">3 Available</p>
+                                    <a href="#" class="card-link">View Offers <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Recent Orders -->
+                        <div class="recent-orders">
+                            <div class="section-header">
+                                <h3>Recent Orders</h3>
+                                <a href="#orders" class="btn btn-outline">View All</a>
+                            </div>
+                            
+                            <div class="orders-table">
+                                <div class="order-row">
+                                    <div class="order-info">
+                                        <span class="order-id">#MED20250012</span>
+                                        <span class="order-date">Dec 18, 2025</span>
+                                    </div>
+                                    <div class="order-items">
+                                        Digital Blood Pressure Monitor, Infrared Thermometer
+                                    </div>
+                                    <div class="order-status">
+                                        <span class="status delivered">Delivered</span>
+                                    </div>
+                                    <div class="order-total">
+                                        EGP 1,749
+                                    </div>
+                                    <div class="order-actions">
+                                        <a href="#" class="btn btn-sm btn-outline">View</a>
+                                        <button class="btn btn-sm btn-primary">Reorder</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="order-row">
+                                    <div class="order-info">
+                                        <span class="order-id">#MED20250013</span>
+                                        <span class="order-date">Dec 20, 2025</span>
+                                    </div>
+                                    <div class="order-items">
+                                        Portable Oxygen Concentrator
+                                    </div>
+                                    <div class="order-status">
+                                        <span class="status processing">Processing</span>
+                                    </div>
+                                    <div class="order-total">
+                                        EGP 18,500
+                                    </div>
+                                    <div class="order-actions">
+                                        <a href="#" class="btn btn-sm btn-outline">Track</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="order-row">
+                                    <div class="order-info">
+                                        <span class="order-id">#MED20250014</span>
+                                        <span class="order-date">Today</span>
+                                    </div>
+                                    <div class="order-items">
+                                        Surgical Instrument Set
+                                    </div>
+                                    <div class="order-status">
+                                        <span class="status pending">Pending</span>
+                                    </div>
+                                    <div class="order-total">
+                                        EGP 8,500
+                                    </div>
+                                    <div class="order-actions">
+                                        <a href="#" class="btn btn-sm btn-outline">View</a>
+                                        <button class="btn btn-sm btn-outline">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Quick Actions -->
+                        <div class="quick-actions">
+                            <h3>Quick Actions</h3>
+                            <div class="actions-grid">
+                                <a href="products.html" class="action-card">
+                                    <i class="fas fa-plus-circle"></i>
+                                    <span>New Order</span>
+                                </a>
+                                <a href="#prescriptions" class="action-card">
+                                    <i class="fas fa-upload"></i>
+                                    <span>Upload Prescription</span>
+                                </a>
+                                <a href="help.html" class="action-card">
+                                    <i class="fas fa-headset"></i>
+                                    <span>Contact Support</span>
+                                </a>
+                                <a href="#settings" class="action-card">
+                                    <i class="fas fa-user-edit"></i>
+                                    <span>Update Profile</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Orders -->
+                    <div class="profile-section-content" id="orders">
+                        <div class="section-header">
+                            <h2>My Orders</h2>
+                            <p>Track and manage your medical equipment purchases</p>
+                        </div>
+                        <!-- Orders content will be loaded here -->
+                    </div>
+                    
+                    <!-- Prescriptions -->
+                    <div class="profile-section-content" id="prescriptions">
+                        <div class="section-header">
+                            <h2>My Prescriptions</h2>
+                            <p>Manage your medical prescriptions for equipment purchases</p>
+                        </div>
+                        <!-- Prescriptions content will be loaded here -->
+                    </div>
+                    
+                    <!-- Wishlist -->
+                    <div class="profile-section-content" id="wishlist">
+                        <div class="section-header">
+                            <h2>My Wishlist</h2>
+                            <p>Save medical equipment for later purchase</p>
+                        </div>
+                        <!-- Wishlist content will be loaded here -->
+                    </div>
+                    
+                    <!-- Account Settings -->
+                    <div class="profile-section-content" id="settings">
+                        <div class="section-header">
+                            <h2>Account Settings</h2>
+                            <p>Update your personal and professional information</p>
+                        </div>
+                        
+                        <form class="settings-form">
+                            <div class="form-section">
+                                <h3>Personal Information</h3>
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="firstName">First Name *</label>
+                                        <input type="text" id="firstName" value="Mohamed" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name *</label>
+                                        <input type="text" id="lastName" value="Ahmed" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address *</label>
+                                        <input type="email" id="email" value="mohamed@example.com" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number *</label>
+                                        <input type="tel" id="phone" value="+20 123 456 7890" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-section">
+                                <h3>Professional Information</h3>
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="profession">Profession *</label>
+                                        <select id="profession" required>
+                                            <option value="doctor" selected>Medical Doctor</option>
+                                            <option value="nurse">Nurse</option>
+                                            <option value="technician">Medical Technician</option>
+                                            <option value="hospital">Hospital Administrator</option>
+                                            <option value="pharmacy">Pharmacist</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="license">Medical License Number</label>
+                                        <input type="text" id="license" value="MED-EG-12345">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="institution">Medical Institution</label>
+                                        <input type="text" id="institution" value="Cairo General Hospital">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-section">
+                                <h3>Shipping Address</h3>
+                                <div class="form-group">
+                                    <label for="address">Delivery Address *</label>
+                                    <textarea id="address" rows="3" required>123 Medical Street, Cairo, Egypt</textarea>
+                                </div>
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="city">City *</label>
+                                        <select id="city" required>
+                                            <option value="cairo" selected>Cairo</option>
+                                            <option value="alexandria">Alexandria</option>
+                                            <option value="giza">Giza</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="zip">ZIP Code</label>
+                                        <input type="text" id="zip" value="11511">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="reset" class="btn btn-outline">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Save Changes</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Security -->
+                    <div class="profile-section-content" id="security">
+                        <div class="section-header">
+                            <h2>Security Settings</h2>
+                            <p>Manage your account security and privacy</p>
+                        </div>
+                        
+                        <div class="security-cards">
+                            <div class="security-card">
+                                <h3><i class="fas fa-lock"></i> Change Password</h3>
+                                <form class="password-form">
+                                    <div class="form-group">
+                                        <label for="currentPassword">Current Password *</label>
+                                        <input type="password" id="currentPassword" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="newPassword">New Password *</label>
+                                        <input type="password" id="newPassword" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="confirmPassword">Confirm New Password *</label>
+                                        <input type="password" id="confirmPassword" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Update Password</button>
+                                </form>
+                            </div>
+                            
+                            <div class="security-card">
+                                <h3><i class="fas fa-shield-alt"></i> Security Preferences</h3>
+                                <div class="preferences">
+                                    <div class="preference-item">
+                                        <div>
+                                            <h4>Two-Factor Authentication</h4>
+                                            <p>Add an extra layer of security to your account</p>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="preference-item">
+                                        <div>
+                                            <h4>Login Notifications</h4>
+                                            <p>Get notified when someone logs into your account</p>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="preference-item">
+                                        <div>
+                                            <h4>Session Management</h4>
+                                            <p>Manage your active login sessions</p>
+                                        </div>
+                                        <a href="#" class="btn btn-outline">View Sessions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <i class="fas fa-hospital-alt"></i>
+                        <span>MediCare Store</span>
+                    </div>
+                    <p>Your trusted partner for quality medical equipment and supplies in Egypt since 2015.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Diagnostic Equipment</a></li>
+                        <li><a href="#">Surgical Instruments</a></li>
+                        <li><a href="#">Patient Monitoring</a></li>
+                        <li><a href="#">Personal Protection</a></li>
+                        <li><a href="#">Therapy Equipment</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Medical Street, Cairo, Egypt</li>
+                        <li><i class="fas fa-phone"></i> +20 123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> support@medicalstore.com</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Customer Support</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 MediCare Medical Equipment Store. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
